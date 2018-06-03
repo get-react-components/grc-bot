@@ -1,0 +1,33 @@
+{
+  "name": "grc-bot",
+  "version": "1.0.0",
+  "description": "GRC's bot program to handle GRC GitHub communication channel",
+  "author": "Ashwin Hegde <ashwin.hegde3@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/get-react-components/grc-bot.git",
+  "main": "./src/index",
+  "scripts": {
+    "start": "probot run ./src/index.js",
+    "lint": "eslint --fix",
+    "test": "jest",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
+    "deploy": "./scripts/deploy.sh"
+  },
+  "dependencies": {
+    "probot": "^6.0.0"
+  },
+  "devDependencies": {
+    "debug": "^3.1.0",
+    "jest": "^22.4.3",
+    "smee-client": "^1.0.1",
+    "eslint": "^4.19.1"
+  },
+  "engines": {
+    "node": ">= 8.11.2"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
